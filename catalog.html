@@ -12,7 +12,8 @@
         </a>
         <div class="container-form">
           <form>
-            <input type="text" name="search" placeholder="Поиск по сайту">
+            <label class="visually-hidden" for="search">Форма поиска</label>
+            <input type="search" name="search" placeholder="Поиск по сайту" id="search">
           </form>
         </div>
         <ul class="user-navigation">
@@ -23,7 +24,22 @@
           <a class="cart">Корзина</a>
         </p>
         <ul class="main-menu">
-          <li class="catalog"><a href="#">Каталог товаров<span class="plus">+</span></a></li>
+          <li class="catalog"><a href="#">Каталог товаров<span class="plus">+</span></a>
+            <ul class="sub-catalog">
+              <li>
+                <a href="#">Виртуальная реальность</a><br>
+                <a href="#">Моноподы для селфи</a><br>
+                <a href="#">Экшн-камеры</a>
+              </li>
+              <li>
+                <a href="#">Фитнес-браслеты</a><br>
+                <a href="#">Умные часы</a>
+              </li>
+              <li>
+                <a href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </li>
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
           <li class="contacts"><a href="#">Контакты</a></li>
@@ -40,8 +56,27 @@
       
       <form class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- Здесь будет форма -->
-        <a class="button" href="#">Показать</a>
+        <form action="https://echo.htmlacademy.ru" method="GET">
+          <fieldset class="color-choise">
+            <legend>Цвет</legend>
+            <input class="checkbox" type="checkbox" name="black" id="black">
+            <label for="black">Черный</label>
+            <input class="checkbox" type="checkbox" name="white" id="white">
+            <label for="black">Белый</label>
+            <input class="checkbox" type="checkbox" name="blue" id="blue">
+            <label for="black">Синий</label>
+            <input class="checkbox" type="checkbox" name="red" id="red">
+            <label for="black">Красный</label>
+            <input class="checkbox" type="checkbox" name="pink" id="pink">
+            <label for="black">Розовый</label>
+          </fieldset>
+          <fieldset class="bluetooth-choise">
+            <legend>Bluetooth</legend>
+            <input type="radio" value="yes" name="bluetooth">
+            <input type="radio" value="no" name="bluetooth">
+          </fieldset>
+          <button class="button" type="submit">Показать</button>
+        </form>
       </form>
 
       <section class="catalog">

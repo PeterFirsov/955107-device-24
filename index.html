@@ -12,7 +12,8 @@
         </a>
         <div class="container-form">
           <form>
-            <input type="text" name="search" placeholder="Поиск по сайту">
+            <label class="visually-hidden" for="search">Форма поиска</label>
+            <input type="search" name="search" placeholder="Поиск по сайту" id="search">
           </form>
         </div>
         <ul class="user-navigation">
@@ -23,7 +24,22 @@
           <a class="cart">Корзина</a>
         </p>
         <ul class="main-menu">
-          <li class="catalog"><a href="catalog.html">Каталог товаров<span class="plus">+</span></a></li>
+          <li class="catalog"><a href="catalog.html">Каталог товаров<span class="plus">+</span></a>
+            <ul class="sub-catalog">
+              <li>
+                <a href="#">Виртуальная реальность</a><br>
+                <a href="#">Моноподы для селфи</a><br>
+                <a href="#">Экшн-камеры</a>
+              </li>
+              <li>
+                <a href="#">Фитнес-браслеты</a><br>
+                <a href="#">Умные часы</a>
+              </li>
+              <li>
+                <a href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </li>
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
           <li class="contacts"><a href="#">Контакты</a></li>
@@ -97,6 +113,36 @@
       <p class="copyright">
         <a class="button" href="https://htmlacademy.ru"><img src="img/logo-html.svg" alt="HTML Academy" width="27" height="35"></a>
       </p>
+
+      <section class="write-us">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <form action="https://echo.htmlacademy.ru" method="POST">
+          <p class="write-us-form">
+            <label for="your-name">Ваше имя</label>
+            <input class="pole" type="text" name="name" id="your-name" placeholder="Имя Фамилия">
+          </p>
+          <p class="write-us-form">
+            <label for="your-mail">Ваш e-mail</label>
+            <input class="pole" type="email" name="email" id="your-mail" placeholder="email@example.com">
+          </p>
+          <p class="letter-form">
+            <label for="letter">Текст письма:</label>
+            <textarea name="your-letter" id="letter">
+              В свободной форме
+            </textarea>
+          </p>
+          <button class="button" type="submit">Отправить</button>
+        </form>
+        <button class="modal-close" type="button">Закрыть</button>
+      </section>
+
+      <section class="modal modal-map">
+        <h2 class="visually-hidden">Наш адрес на карте</h2>
+        <p>
+          <img src="img/map-big.jpg" width="960" height="559" alt="Офис компании по адресу ул. Строителей, 15">
+        </p>
+        <button class="modal-close" type="button">Закрыть</button>
+      </section>
 
     </footer>
 
