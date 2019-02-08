@@ -21,7 +21,7 @@
     font-family: "Opensans";
     src: url("../fonts/opensanslight.woff") format("woff"),
          url("../fonts/opensanslight.woff2") format("woff2");
-         font-weight: lighter;
+         font-weight: 300;
 }
 
 body {
@@ -46,12 +46,12 @@ a {
     visibility: hidden;
 }
 
-.main-header {
-    background-color: #ffffff;
-    background-image: url("../img/header-bg.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 1160px 299px;
+.main-nav {
+    background-color: #f7e296;
+    width: 1160px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .logo:hover,
@@ -69,7 +69,7 @@ a {
 .search {
     font-family: "Opensans", "Arial", sans-serif;
     font-size: 15px;
-    font-weight: lighter;
+    font-weight: 300;
     line-height: 30px;
     opacity: 0.3; 
     border:none;
@@ -101,7 +101,7 @@ a {
 .sub-menu a {
     font-family: "Opensans", "Arial", sans-serif;
     font-size: 15px;
-    font-weight: lighter;
+    font-weight: 300;
     line-height: 36px;
     letter-spacing: normal;
     text-transform: none;
@@ -161,7 +161,7 @@ a {
 .user-navigation a {
     font-family: "Opensans", "Arial", sans-serif;
     font-size: 15px;
-    font-weight: lighter;
+    font-weight: 300;
     line-height: 30px;
     color: #000000;
     list-style: none;
@@ -181,7 +181,7 @@ a {
 .user-navigation-footer a {
     font-family: "Opensans", "Arial", sans-serif;
     font-size: 15px;
-    font-weight: lighter;
+    font-weight: 300;
     line-height: 30px;
     color: #ffffff;
     list-style: none;
@@ -220,7 +220,7 @@ a {
 .contacts-main p {
     font-family: "Opensans", "Arial", sans-serif;
     font-size: 15px;
-    font-weight: lighter;
+    font-weight: 300;
     line-height: 30px;
     text-transform: none;
 }
@@ -238,7 +238,7 @@ a {
     list-style: none;
     font-family: "Opensans", "Arial", sans-serif;
     font-size: 15px;
-    font-weight: lighter;
+    font-weight: 300;
     line-height: 30px;
     text-transform: none;
 }
@@ -263,7 +263,7 @@ a {
 .bluetooth-choise {
     font-family: "Opensans", "Arial", sans-serif;
     font-size: 14px;
-    font-weight: lighter;
+    font-weight: 300;
     line-height: 40px;
     text-transform: none;
     border: none;
@@ -282,7 +282,7 @@ a {
 }
 
 .catalog-list h3,
-.catalog-list a {
+.catalog-list .item-name {
     font-family: "Gilroy", "Arial", sans-serif;
     font-size: 18px;
     font-weight: bold;
@@ -300,6 +300,15 @@ a {
     text-transform: none;
 }
 
+.compare {
+    font-family: "Opensans", "Arial", sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 36px;
+    text-transform: none;
+    color: #000000;
+    opacity: 0.5;
+}
 
 .main-footer {
     background-color: #464646;
@@ -308,7 +317,7 @@ a {
 .main-footer p {
     font-family: "Opensans", "Arial", sans-serif;
     font-size: 15px;
-    font-weight: lighter;
+    font-weight: 300;
     line-height: 30px;
     text-transform: none;
     color: #ffffff;
@@ -333,7 +342,7 @@ a {
 .write-us-form textarea {
     font-family: "Opensans", "Arial", sans-serif;
     font-size: 14px;
-    font-weight: lighter;
+    font-weight: 300;
     line-height: 18px;
     text-transform: none;
     color: #464646;
