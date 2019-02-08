@@ -1,7 +1,8 @@
 @font-face {
-    font-family: "GilroyExtraBold";
+    font-family: "Gilroy";
     src: url("../fonts/gilroyextrabold.woff") format("woff"),
          url("../fonts/gilroyextrabold.woff2") format("woff2");
+         font-weight: bold;
 }
 
 @font-face {
@@ -17,17 +18,19 @@
  }
 
 @font-face {
-    font-family: "OpensansLight";
+    font-family: "Opensans";
     src: url("../fonts/opensanslight.woff") format("woff"),
          url("../fonts/opensanslight.woff2") format("woff2");
+         font-weight: lighter;
 }
 
 body {
     margin: 0;
     padding: 0;
 
-    font-family: "GilroyExtraBold", "Arial", sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-size: 18px;
+    font-weight: bold;
     line-height: 24px;
     color: #000000;
     text-transform: uppercase;
@@ -54,34 +57,30 @@ a {
 .logo:hover,
 .footer-logo:hover,
 .html-logo:hover {
-    filter: alpha(Opacity=60);
     opacity: 0.6; 
 }
 
 .logo:active,
 .footer-logo:active,
 .html-logo:active {
-    filter: alpha(Opacity=30);
     opacity: 0.3; 
 }
 
 .search {
-    font-family: "OpensansLight", "Arial", sans-serif;
+    font-family: "Opensans", "Arial", sans-serif;
     font-size: 15px;
+    font-weight: lighter;
     line-height: 30px;
-    filter: alpha(Opacity=30);
     opacity: 0.3; 
     border:none;
     background-color: transparent;
 }
 
 .search:hover {
-    filter: alpha(Opacity=60);
     opacity: 0.6; 
 }
 
 .search:active {
-    filter: alpha(Opacity=100);
     opacity: 1;
 }
 
@@ -100,8 +99,9 @@ a {
 }
 
 .sub-menu a {
-    font-family: "OpensansLight", "Arial", sans-serif;
+    font-family: "Opensans", "Arial", sans-serif;
     font-size: 15px;
+    font-weight: lighter;
     line-height: 36px;
     letter-spacing: normal;
     text-transform: none;
@@ -118,14 +118,12 @@ a {
 .main-menu a:hover,
 .sub-menu a:hover,
 .footer-menu a:hover {
-    filter: alpha(Opacity=60);
     opacity: 0.6;
 }
 
 .main-menu a:active,
 .sub-menu a:active,
 .footer-menu a:active {
-    filter: alpha(Opacity=30);
     opacity: 0.3; 
 }
 
@@ -137,7 +135,6 @@ a {
 
     text-align: center;
     color: #000000;
-    vertical-align: middle;
     text-transform: uppercase;
     letter-spacing: 3px;
 
@@ -149,21 +146,22 @@ a {
     
 }
 
+
 .button:hover {
     background-image: url("../img/button-hover.png");
 }
 
 .button:active {
-    color: rgba(rgb(0, 0, 0), 0.3);
-    filter: alpha(Opacity=60);
+    color: rgba(0, 0, 0, 0.3);
     opacity: 0.6;
 }
 
 
 .user-navigation,
 .user-navigation a {
-    font-family: "OpensansLight", "Arial", sans-serif;
+    font-family: "Opensans", "Arial", sans-serif;
     font-size: 15px;
+    font-weight: lighter;
     line-height: 30px;
     color: #000000;
     list-style: none;
@@ -176,42 +174,37 @@ a {
 }
 
 .out {
-    filter: alpha(Opacity=30);
     opacity: 0.3;
 }
 
 .user-navigation-footer,
 .user-navigation-footer a {
-    font-family: "OpensansLight", "Arial", sans-serif;
+    font-family: "Opensans", "Arial", sans-serif;
     font-size: 15px;
+    font-weight: lighter;
     line-height: 30px;
     color: #ffffff;
     list-style: none;
     text-transform: none;
-    filter: alpha(Opacity=60);
     opacity: 0.6; 
 }
 
 .user-navigation a:hover {
-    filter: alpha(Opacity=60);
     opacity: 0.6; 
 }
 
 .social-button img {
-    filter: alpha(Opacity=60);
     opacity: 0.6; 
 }
 
 .user-navigation-footer a:hover,
 .social-button img:hover {
-    filter: alpha(Opacity=100);
     opacity: 1; 
 }
 
 .user-navigation a:active,
 .user-navigation-footer a:active,
 .social-button img:active {
-    filter: alpha(Opacity=30);
     opacity: 0.3;
 }
 
@@ -225,8 +218,9 @@ a {
 
 .about-us p,
 .contacts-main p {
-    font-family: "OpensansLight", "Arial", sans-serif;
+    font-family: "Opensans", "Arial", sans-serif;
     font-size: 15px;
+    font-weight: lighter;
     line-height: 30px;
     text-transform: none;
 }
@@ -242,8 +236,9 @@ a {
 
 .breadcrumbs {
     list-style: none;
-    font-family: "OpensansLight", "Arial", sans-serif;
+    font-family: "Opensans", "Arial", sans-serif;
     font-size: 15px;
+    font-weight: lighter;
     line-height: 30px;
     text-transform: none;
 }
@@ -251,7 +246,6 @@ a {
 .breadcrumbs a,
 .breadcrumbs-current {
     color: #000000;
-    filter: alpha(Opacity=30);
     opacity: 0.3;
 }
 
@@ -267,8 +261,9 @@ a {
 
 .color-choise,
 .bluetooth-choise {
-    font-family: "OpensansLight", "Arial", sans-serif;
+    font-family: "Opensans", "Arial", sans-serif;
     font-size: 14px;
+    font-weight: lighter;
     line-height: 40px;
     text-transform: none;
     border: none;
@@ -276,8 +271,9 @@ a {
 
 .color-choise legend,
 .bluetooth-choise legend {
-    font-family: "GilroyExtraBold", "Arial", sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-size: 18px;
+    font-weight: bold;
     line-height: 24px;
 }
 
@@ -287,8 +283,9 @@ a {
 
 .catalog-list h3,
 .catalog-list a {
-    font-family: "GilroyExtraBold", "Arial", sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-size: 18px;
+    font-weight: bold;
     line-height: 24px;
     color: #000000;
     text-transform: none;
@@ -297,18 +294,21 @@ a {
 .catalog-list p {
     font-family: "Gilroy", "Arial", sans-serif;
     font-size: 16px;
+    font-weight: normal;
     line-height: 24px;
     color: #464646;
     text-transform: none;
 }
+
 
 .main-footer {
     background-color: #464646;
 }
 
 .main-footer p {
-    font-family: "OpensansLight", "Arial", sans-serif;
+    font-family: "Opensans", "Arial", sans-serif;
     font-size: 15px;
+    font-weight: lighter;
     line-height: 30px;
     text-transform: none;
     color: #ffffff;
@@ -319,8 +319,9 @@ a {
 }
 
 .write-us {
-    font-family: "GilroyExtraBold", "Arial", sans-serif;
+    font-family: "Gilroy", "Arial", sans-serif;
     font-size: 18px;
+    font-weight: bold;
     line-height: 24px;
     color: #000000;
     text-transform: none;
@@ -330,11 +331,16 @@ a {
 
 .write-us-form input,
 .write-us-form textarea {
-    font-family: "OpensansLight", "Arial", sans-serif;
+    font-family: "Opensans", "Arial", sans-serif;
     font-size: 14px;
+    font-weight: lighter;
     line-height: 18px;
     text-transform: none;
     color: #464646;
-    filter: alpha(Opacity=60);
     opacity: 0.6;
+}
+
+.write-us,
+.map-popup {
+    display: none;
 }
