@@ -320,7 +320,6 @@ a {
 
 .main-mid {
     width: 1160px;
-    height: 1285px;
     padding-left: 20px;
     padding-right: 20px;
     display: flex;
@@ -531,7 +530,6 @@ a {
 
 .catalog-list {
     width: 760px;
-    height: 955px;
     margin: 0px;
     padding: 0px;
     list-style: none;
@@ -602,7 +600,6 @@ a {
 }
 
 .footer-wrapper {
-    position: relative;
     display: flex;
     flex-direction: column;
     width: 1160px;
@@ -610,13 +607,12 @@ a {
     padding: 65px 20px;
 }
 
-.footer-logo {
-    position: absolute;
-}
+
 
 .login-link-footer {
     margin-left: auto;
 }
+
 
 .cart-f {
     margin-left: 64px;
@@ -628,7 +624,6 @@ a {
 
 .wrapper-top {
     display: flex;
-    align-self: flex-end;
     margin-bottom: 37px;
 }
 
