@@ -7,7 +7,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header main-header-index">
         <a class="main-header-logo" href="#">
           <img class="logo" src="img/logo.svg" alt="Логотип магазина DEVICE" width="163" height="35">
         </a>
@@ -24,11 +24,11 @@
         </div>
         <nav class="main-nav">
           <ul class="main-menu">
-            <li class="catalog"><a href="catalog.html">Каталог товаров</a>
-              <ul class="sub-menu visually-hidden">
+            <li class="catalog"><a class="plus" href="#">Каталог товаров</a>
+              <ul class="sub-menu">
                 <li>
                   <a href="#">Виртуальная реальность</a>
-                  <a href="#">Моноподы для селфи</a>
+                  <a href="catalog.html">Моноподы для селфи</a>
                   <a href="#">Экшн-камеры</a>
                 </li>
                 <li>
@@ -56,7 +56,7 @@
           <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
           </p>
           <ul class="delivery-list">
-            <li><a href="#">Деловые линии</a></li>
+            <li><a href="#">Деловые Линии</a></li>
             <li><a href="#">Автотрейдинг</a></li>
             <li><a href="#">ЖелДорЭкспедиция</a></li>
           </ul>
@@ -128,32 +128,33 @@
       </div>
     </footer>
 
-    <section class="write-us">
+    <section class="modal write-us">
       <h2 class="visually-hidden">Форма обратной связи</h2>
-      <form action="https://echo.htmlacademy.ru" method="POST">
-        <p class="write-us-form">
-          <label for="your-name">Ваше имя</label>
+      <button class="modal-close" type="button">Закрыть</button>
+      <form action="https://echo.htmlacademy.ru" method="POST" class="write-us-form">
+        <div class="write-us-name">
+          <label for="your-name">Ваше имя:</label>
           <input class="pole" type="text" name="name" id="your-name" placeholder="Имя Фамилия">
-        </p>
-        <p class="write-us-form">
-          <label for="your-mail">Ваш e-mail</label>
+        </div>
+        <div class="write-us-mail">
+          <label for="your-mail">Ваш e-mail:</label>
           <input class="pole" type="email" name="email" id="your-mail" placeholder="email@example.com">
-        </p>
-        <p class="write-us-form">
+        </div>
+        <div class="write-us-letter">
           <label for="letter">Текст письма:</label>
           <textarea name="your-letter" id="letter">В свободной форме
           </textarea>
-        </p>
+        </div>
         <button class="button" type="submit">Отправить</button>
       </form>
-      <button class="modal-close" type="button">Закрыть</button>
+      
     </section>
 
-    <section class="map-popup">
+    <section class="modal map-popup">
       <h2 class="visually-hidden">Наш адрес на карте</h2>
-      <p>
+      
         <img src="img/map-big.jpg" width="960" height="559" alt="Офис компании по адресу ул. Строителей, 15">
-      </p>
+      
       <button class="modal-close" type="button">Закрыть</button>
     </section>
 
