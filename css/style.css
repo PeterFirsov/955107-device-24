@@ -147,6 +147,8 @@ a {
     text-transform: none;
     color: #000000;
     border: 2px solid #000000;
+    background-color: transparent;
+    outline: none;
 }
 
 
@@ -176,7 +178,8 @@ a {
     width: 441px;
     height: 2px;
     background-color: #000000;
-    
+    pointer-events: none;
+    cursor: not-allowed;
 }
 
 
