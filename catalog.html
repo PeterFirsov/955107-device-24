@@ -15,7 +15,10 @@
         <div class="container-header">
           <form class="search-form">
             <label class="visually-hidden" for="search">Форма поиска</label>
-            <input class="search" type="search" name="search" placeholder="Поиск по сайту" id="search">
+            <input class="search" type="search" name="search" placeholder="Поиск по сайту" id="search" autocomplete="off">
+            
+              <a class="find" href="#">Найти</a>
+            
           </form>
           <div class="login-link"><a class="person" href="#">Валентин Петухов</a><a class="out" href="#">Выйти</a></div>
           <ul class="user-navigation">
@@ -26,20 +29,20 @@
         <nav class="main-nav">
           <ul class="main-menu">
             <li class="catalog"><a class="plus" href="#">Каталог товаров</a>
-              <ul class="sub-menu">
-                <li>
-                  <a href="#">Виртуальная реальность</a>
-                  <a href="#">Моноподы для селфи</a>
-                  <a href="#">Экшн-камеры</a>
-                </li>
-                <li>
-                  <a href="#">Фитнес-браслеты</a>
-                  <a href="#">Умные часы</a>
-                </li>
-                <li>
-                  <a href="#">Квадрокоптеры</a>
-                </li>
-              </ul>
+              <div class="sub-menu">
+                <ul>
+                  <li><a href="#">Виртуальная реальность</a></li>
+                  <li><a href="#">Моноподы для селфи</a></li>
+                  <li><a href="#">Экшн-камеры</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">Фитнес-браслеты</a></li>
+                  <li><a href="#">Умные часы</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">Квадрокоптеры</a></li>
+                </ul>
+              </div>
             </li>
             <li><a href="#">Доставка</a></li>
             <li><a href="#">Гарантия</a></li>
@@ -68,7 +71,7 @@
           </div>
           <div class="arrows">
             <a class="arrow arrow-up">По возрастанию</a>
-            <a class="arrow arrow-down">По убыванию</a>
+            <a class="arrow arrow-down arrow-current">По убыванию</a>
           </div> 
         </div>
       </div>
@@ -200,7 +203,7 @@
                 
                 
               </li>
-              <li class="catalog-item">
+              <li class="catalog-item new">
                 <div class="name-price">
                   <h3>
                     <a class="item-name" href="catalog-item.html">Селфи-палка «Следуй за мной»</a>
@@ -211,7 +214,7 @@
                   <a>
                     <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
                   </a>
-                  <span class="new">NEW</span>
+                  
                   <div class="item-pay">
                     <a class="button" href="#">в корзину</a>
                     <a class="compare-item" href="#">Добавить к сравнению</a>

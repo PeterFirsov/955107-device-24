@@ -86,6 +86,18 @@ a {
     opacity: 0.3; 
 }
 
+.search-form {
+    position: relative;
+    width: 402px;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 40px;
+    margin-right: auto;
+    
+}
+
+
+
 .search {
     margin: 0px;
     padding: 0px;
@@ -96,6 +108,19 @@ a {
     opacity: 0.3; 
     border:none;
     background-color: transparent;
+    outline: none;
+    
+}
+
+.search-form::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 3px;
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/search.svg");
+    background-repeat: no-repeat;
 }
 
 .search:hover {
@@ -105,6 +130,54 @@ a {
 .search:active {
     opacity: 1;
 }
+
+.find {
+    position: absolute;
+    display: none;
+    top: -10px;
+    right: 0px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: "Opensans", "Arial", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 30px;
+    text-transform: none;
+    border: 2px solid #000000;
+}
+
+
+.search:focus + .find {
+    display: block;
+}
+
+
+
+.find:hover {
+    background-color: #000000;
+    color: #ffffff;
+    display: block;
+    
+}
+
+.find:active {
+    display: block;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.find::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: -356px;
+    width: 441px;
+    height: 2px;
+    background-color: #000000;
+    
+}
+
 
 .main-nav {
     margin: 0px;
@@ -160,10 +233,6 @@ a {
     display: none;
 }
 
-
-
-
-
 .sub-menu {
     padding: 0px;
     margin: 0px;
@@ -176,23 +245,25 @@ a {
     width: 1160px;
     box-sizing: border-box;
     background-color: #f7e296;
-    list-style: none;
 }
 
-.sub-menu li {
+.sub-menu ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
     margin-bottom: 35px;
 }
 
-.sub-menu li:first-child {
+.sub-menu ul:first-child {
     margin-right: 63px;
 }
 
-.sub-menu li:nth-child(2) {
+.sub-menu ul:nth-child(2) {
     margin-right: 78px;
 }
 
 .sub-menu a {
-    display: block;
+    
     font-family: "Opensans", "Arial", sans-serif;
     font-size: 15px;
     font-weight: 300;
@@ -285,22 +356,17 @@ a {
 }
 
 .container-header {
+    
     display: flex;
     padding: 0px;
     margin: 0px;
     flex-wrap: wrap;
     flex-direction: row;
     margin-bottom: 38px;
-    margin-left: 98px;
-}
-
-.search-form {
-    width: 442px;
-    margin: 0px;
-    padding: 0px;
-    margin-right: auto;
+    margin-left: 60px;
     
 }
+
 
 .user-navigation {
     max-width: 600px;
@@ -559,6 +625,10 @@ a.arrow {
 }
 
 .arrow:active::before {
+    opacity: 1;
+}
+
+.arrow-current::before {
     opacity: 1;
 }
 
@@ -862,6 +932,7 @@ a.arrow {
 }
 
 .catalog-item {
+    position: relative;
     margin: 0px;
     padding: 0px;
     padding-bottom: 46px;
@@ -908,30 +979,31 @@ a.arrow {
     margin-bottom: 20px;
 }
 
-.new {
-    position: absolute;
-    top: 47px;
-    right: 27px;
-    display: block;
-    width: 60px;
-    height: 60px;
-    font-size: 14px;
-    line-height: 24px;
-    text-align: center;
-    opacity: 0.2;
-
-    
-}
 
 .new::after {
     content: "";
     position: absolute;
-    top: -18px;
-    left: 0px;
+    top: 28px;
+    right: 28px;
     width: 55px;
     height: 55px;
     border: 2px solid #000000;
     border-radius: 50%;
+    opacity: 0.2;
+}
+
+.new::before {
+    content: "NEW";
+    position: absolute;
+    top: 47px;
+    right: 16px;
+    width: 55px;
+    height: 55px;
+    font-size: 14px;
+    line-height: 24px;
+    opacity: 0.2;
+
+    z-index: 1 ;
 }
 
 
@@ -1073,7 +1145,6 @@ a.arrow {
 
 
 .user-navigation-footer a:hover,
-.social-button img:hover,
 .login-link-footer a:hover,
 .login-link-footer .person:hover::before {
     opacity: 1; 
@@ -1081,7 +1152,6 @@ a.arrow {
 
 .user-navigation a:active,
 .user-navigation-footer a:active,
-.social-button img:active,
 .login-link .in:active,
 .login-link .out:active,
 .login-link .person:active,
@@ -1094,7 +1164,15 @@ a.arrow {
 }
 
 .social-button img {
-    opacity: 0.6; 
+    opacity: 0.3; 
+}
+
+.social-button img:hover {
+    opacity: 0.6;
+}
+
+.social-button img:active {
+    opacity: 0.1;
 }
 
 .about-us h2,
