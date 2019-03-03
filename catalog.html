@@ -96,7 +96,7 @@
                 <legend>Цвет</legend>
                 
                 <label class="choise-checkbox">
-                  <input class="visually-hidden" type="checkbox" name="black" id="black">
+                  <input class="visually-hidden" type="checkbox" name="black" id="black" checked>
                   <span class="checkbox-indicator"></span>
                 Черный</label>
               
@@ -108,17 +108,17 @@
               
               
                 <label class="choise-checkbox">
-                  <input class="visually-hidden" type="checkbox" name="blue" id="blue">
+                  <input class="visually-hidden" type="checkbox" name="blue" id="blue" checked>
                   <span class="checkbox-indicator"></span>
                 Синий</label>
               
                 <label class="choise-checkbox">
-                  <input class="visually-hidden" type="checkbox" name="red" id="red">
+                  <input class="visually-hidden" type="checkbox" name="red" id="red" checked>
                   <span class="checkbox-indicator"></span>
                 Красный</label>
               
                 <label class="choise-checkbox">
-                  <input class="visually-hidden" type="checkbox" name="pink" id="pink" disabled checked>
+                  <input class="visually-hidden" type="checkbox" name="pink" id="pink">
                   <span class="checkbox-indicator"></span>
                 Розовый</label>
                 
@@ -165,7 +165,7 @@
               </li>
               <li class="catalog-item">
                 <div class="name-price">
-                  <h3>
+                  <h3 class="short">
                     <a class="item-name" href="catalog-item.html">Профессиональная селфи-палка</a>
                   </h3>
                   <p>1 500 руб.</p>
@@ -222,18 +222,14 @@
               </li>
             </ul>
 
-            <div class="pages">
-              <div class="previous">
-                <a class="pages-font" href="#">НАЗАД</a>
-              </div>
+            <div class="pages-list">
+              <a class="previous" href="#">НАЗАД</a>
               <div class="numbers">
-                <a class="pages-font-current" href="#">1</a>
-                <a class="pages-font" href="#">2</a>
-                <a class="pages-font" href="#">3</a>
+                <a class="pages-current">1</a>
+                <a class="pages" href="#">2</a>
+                <a class="pages" href="#">3</a>
               </div>
-              <div class="next">
-                <a class="pages-font" href="#">ВПЕРЕД</a>
-              </div>
+              <a class="next" href="#">ВПЕРЕД</a>
             </div>
 
           </section>
@@ -314,9 +310,9 @@
           </ul>
           
 
-          <div class="copyright">
+          
             <a href="https://htmlacademy.ru"><img class="html-logo" src="img/logo-html.png" alt="HTML Academy" width="27" height="35"></a>
-          </div>
+          
         </div>
         
       </div>
