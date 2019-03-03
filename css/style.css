@@ -619,6 +619,12 @@ a {
     border-radius: 50%;
 }
 
+#product-1:focus ~ .slider-controls .slider-controls-item--1::before,
+#product-2:focus ~ .slider-controls .slider-controls-item--2::before,
+#product-3:focus ~ .slider-controls .slider-controls-item--3::before {
+    outline: 2px solid #63b3ff;
+}
+
 
 .slider-item-image {
     flex-grow: 1;
@@ -943,9 +949,11 @@ a {
     background-color: #000000;
 }
 
-
-
-
+#offer-1:focus ~ .services-controls .services-controls-item--1::before,
+#offer-2:focus ~ .services-controls .services-controls-item--2::before,
+#offer-3:focus ~ .services-controls .services-controls-item--3::before {
+    outline: 2px solid #63b3ff;
+}
 
 
 
@@ -1091,8 +1099,8 @@ a {
 
 .middle-filter-wrapper {
     width: 1099px;
-    padding-left: 81px;
-    padding-right: 20px;
+    padding-left: 63px;
+    
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -1102,7 +1110,7 @@ a {
     font-size: 16px;
     letter-spacing: 0.22em;
     padding-top: 23px;
-    padding-right: 178px;
+    padding-right: 176px;
 }
 
 .filter-type {
@@ -1147,7 +1155,6 @@ a {
 .arrows {
     margin-left: auto;
     margin-top: 23px;
-    
 }
 
 .arrow {
@@ -2258,7 +2265,8 @@ a {
 
 
 .write-us {
-    display: none;
+    display: block;
+    position: fixed;
     top: 357px;
     left: 50%;
     padding: 100px 100px;
@@ -2266,16 +2274,17 @@ a {
     margin-left: -480px;
     background-color: #ffffff;
     box-sizing: border-box;
-    
+    z-index: 100;
 }
 
 
 
 .map-popup {
-    display: none;
+    display: block;
+    position: fixed;
     height: 559px;
     top: 1252px;
     left: 50%;
     margin-left: -480px;
-    
+    z-index: 100;
 }
