@@ -2265,12 +2265,13 @@ a {
 
 
 .write-us {
-    display: block;
+    display: none;
     position: fixed;
-    top: 357px;
+    top: 50%;
     left: 50%;
     padding: 100px 100px;
     padding-bottom: 94px;
+    margin-top: -276.5px;
     margin-left: -480px;
     background-color: #ffffff;
     box-sizing: border-box;
@@ -2280,11 +2281,13 @@ a {
 
 
 .map-popup {
-    display: block;
+    display: none;
     position: fixed;
     height: 559px;
     top: 1252px;
+    top: 50%;
     left: 50%;
+    margin-top: -279.5px;
     margin-left: -480px;
     z-index: 100;
 }
