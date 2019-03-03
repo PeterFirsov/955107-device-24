@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Петр Фирсов](https://up.htmlacademy.ru/htmlcss/24/user/955107).
-* Наставник: [Роман Духницький](https://htmlacademy.ru/profile/id59884).
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
