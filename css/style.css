@@ -72,9 +72,7 @@ a {
     top: -19px;
 }
 
-.html-logo {
-    margin-left: -27px;
-}
+
 
 .logo:hover,
 .footer-logo:hover,
@@ -1098,32 +1096,36 @@ a {
 }
 
 .middle-filter-wrapper {
-    width: 1099px;
-    padding-left: 63px;
-    
+    width: 1160px;
+    position: relative;
     display: flex;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .filter-name {
+    width: 267px;
     font-size: 16px;
     letter-spacing: 0.22em;
     padding-top: 23px;
-    padding-right: 176px;
+    padding-left: 60px;
 }
 
 .filter-type {
+    width: 760px;
+    position: relative;
     font-size: 16px;
     letter-spacing: 0.235em;
-    padding-left: 72px;
+    padding-left: 73px;
     padding-top: 23px;
     padding-bottom: 23px;
-
+    
     background-color: #ebebeb;
 }
 
-.filter-type a {
+.filter-type > a {
     font-family: "Opensans", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 300;
@@ -1134,37 +1136,42 @@ a {
     letter-spacing: normal;
 }
 
-.filter-type a:first-child {
+.filter-type > a:first-child {
     margin-left: 50px;
     margin-right: 20px;
 }
 
-.filter-type a:last-child {
+.filter-type > a:nth-child(3) {
     margin-left: 27px;
 }
 
-.filter-type a:hover {
+
+
+.filter-type > a:hover {
     opacity: 0.6;
 }
 
-.filter-type a:active,
+.filter-type > a:active,
 .filter-type .current-type {
     opacity: 1;
 }
 
 .arrows {
-    margin-left: auto;
-    margin-top: 23px;
+    position: absolute;
+    display: flex;
+    top: 24px;
+    right: 0px;
 }
 
 .arrow {
-    display: inline-block;
+    display: block;
     margin: 0px;
     padding: 0px;
-    margin-left: 14px;
 }
 
-
+.arrow-up {
+    margin-right: 18px;
+}
 
 
 .arrow::before {
@@ -1176,6 +1183,8 @@ a {
     border-left-color: transparent;
     opacity: 0.2;
     display: inline-block;
+    padding: 0px; 
+    margin: 0px;
 }
 
 .arrow-down::before {
@@ -1190,6 +1199,8 @@ a {
 .arrow:hover::before {
     opacity: 0.4;
 }
+
+
 
 .arrow:active::before {
     opacity: 1;
@@ -1217,8 +1228,9 @@ a {
 
 
 .side-filter {
-    width: 349px;
+    width: 281px;
     padding-left: 47px;
+
 }
 
 .side-form {
@@ -2004,19 +2016,20 @@ a {
 
 .social-list {
     display: flex;
+    width: 143px;
+    flex-wrap: wrap;
     margin: 0px;
     margin-top: 3px;
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: 482px;
     padding: 0px;
     list-style: none;
 }
 
-.social-list li:last-child {
-    margin-left: 23px;
+.social-list li:nth-child(3n+3) {
+    margin-right: 0px;
 }
 
-.social-list li:first-child {
+.social-list li {
     margin-right: 23px;
 }
 
@@ -2094,7 +2107,7 @@ a {
 
 .wrapper-mid {
     display: flex;
-    justify-content: space-between;
+    
 }
 
 
@@ -2106,7 +2119,7 @@ a {
 
 .wrapper-bot {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .modal {
