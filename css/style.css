@@ -1101,8 +1101,7 @@ a {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    
 }
 
 .filter-name {
@@ -1230,7 +1229,7 @@ a {
 .side-filter {
     width: 281px;
     padding-left: 47px;
-
+    
 }
 
 .side-form {
@@ -1241,17 +1240,18 @@ a {
 }
 
 .hard-filter {
-    position: relative;
     margin-top: 81px;
     margin-bottom: 70px;
 }
 
-.hard-filter::before {
+
+
+.hard-filter legend::before {
     content: "";
 
     position: absolute;
     top: -12px;
-    left: 9px;
+    left: 0px;
 
     width: 201px;
     height: 2px;
@@ -1260,6 +1260,7 @@ a {
 
 .hard-filter legend {
     margin-bottom: 30px;
+    position: relative;
 }
 
 .range-controls {
@@ -1353,6 +1354,7 @@ a {
 
 .color-choise legend {
     margin-bottom: 13px;
+    position: relative;
 }
 
 .color-choise label {
@@ -1368,6 +1370,7 @@ a {
 
 .bluetooth-choise legend {
     margin-bottom: 14px;
+    position: relative;
 }
 
 
@@ -1378,12 +1381,12 @@ a {
     margin-bottom: 34px;
 }
 
-.color-choise::before {
+.color-choise legend::before {
     content: "";
 
     position: absolute;
     top: -12px;
-    left: 9px;
+    left: 0px;
 
     width: 201px;
     height: 2px;
@@ -1479,12 +1482,12 @@ a {
     margin-bottom: 28px;
 }
 
-.bluetooth-choise::before {
+.bluetooth-choise legend::before {
     content: "";
 
     position: absolute;
     top: -12px;
-    left: 9px;
+    left: 0px;
 
     width: 201px;
     height: 2px;
