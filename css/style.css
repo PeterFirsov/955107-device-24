@@ -806,7 +806,7 @@ a {
 }
 
 .category-item a:active svg,
-.category-item a:active figcaption {
+.category-item a:active p {
     opacity: 0.3;
 }
 
@@ -822,7 +822,7 @@ a {
     margin-bottom: 33px;
 }
 
-.category-item figcaption {
+.category-item p {
     text-transform: none;
     font-size: 18px;
     line-height: 24px;
@@ -832,31 +832,31 @@ a {
     color: #000000;
 }
 
-.category-item:nth-child(1) svg {
+.category-item .svg-1 {
     margin-top: 52px;
 }
 
-.category-item:nth-child(2) svg {
+.category-item .svg-2 {
     margin-top: 41px;
     margin-left: 2px;
 }
 
-.category-item:nth-child(3) svg {
+.category-item .svg-3 {
     margin-top: 38px;
     margin-left: 9px;
 }
 
-.category-item:nth-child(4) svg {
+.category-item .svg-4 {
     margin-top: 50px;
     margin-left: 3px;
 }
 
-.category-item:nth-child(5) svg {
+.category-item .svg-5 {
     margin-top: 32px;
     margin-left: 6px;
 }
 
-.category-item:nth-child(6) svg {
+.category-item .svg-6 {
     margin-top: 49px;
     margin-left: -2px;
 }
@@ -1861,7 +1861,7 @@ a {
 
 }
 
-.delivery-list a {
+.delivery-list {
     font-size: 16px;
     line-height: 40px;
     color: #000000;
