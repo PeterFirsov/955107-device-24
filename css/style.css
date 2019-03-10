@@ -781,7 +781,7 @@ a {
     width: 1160px;
     margin: 0px auto;
     padding: 0px 20px;
-    margin-bottom: 182px;
+    margin-bottom: 152px;
 }
 
 .category-list {
@@ -795,6 +795,7 @@ a {
 .category-item {
     width: 160px;
     margin-right: 40px;
+    margin-bottom: 30px;
 }
 
 .category-item:nth-child(6n+6) {
