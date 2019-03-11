@@ -1365,7 +1365,7 @@ a {
 .color-choise label {
     margin-bottom: 10px;
     padding-top: 10px;
-
+    display: block;
 }
 
 .bluetooth-choise label {
