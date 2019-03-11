@@ -281,22 +281,19 @@ a {
 }
 
 .footer-menu {
+    width: 428px;
     margin: 5px;
     margin-left: auto;
     margin-right: 201px;
     padding: 0px;
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
+    justify-content: space-between;
     letter-spacing: 0.20em;
 }
 
-.footer-menu li:first-child {
-    margin-right: 34px;
-}
 
-.footer-menu li:last-child {
-    margin-left: 33px;
-}
 
 .footer-menu a {
     color: #ffffff;
@@ -1362,16 +1359,6 @@ a {
     position: relative;
 }
 
-.color-choise label {
-    margin-bottom: 10px;
-    padding-top: 10px;
-    display: block;
-}
-
-.bluetooth-choise label {
-    margin-bottom: 10px;
-    padding-top: 10px;
-}
 
 .bluetooth-choise legend {
     margin-bottom: 14px;
@@ -1380,9 +1367,6 @@ a {
 
 
 .color-choise {
-    position: relative;
-    display: flex;
-    flex-direction: column;
     margin-bottom: 34px;
 }
 
@@ -1400,6 +1384,9 @@ a {
 
 .choise-checkbox,
 .choise-radio {
+    display: block;
+    margin-bottom: 10px;
+    padding-top: 10px;
     position: relative;
     width: 100px;
     padding-left: 39px;
@@ -2013,7 +2000,8 @@ a {
     background-color: #464646;
 }
 
-.main-footer p {
+.main-footer p,
+.footer-contacts-tel a {
     font-family: "Opensans", "Arial", sans-serif;
     font-size: 15px;
     font-weight: 300;
